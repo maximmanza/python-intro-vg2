@@ -59,5 +59,3 @@ varge = input("Hvilken farge er din faforitt?")
 print(f"Du heter {name}, og du er {alder}, din faforit farge er {varge}")
  
 """
- 
- 

@@ -1,4 +1,124 @@
 """
+
+høyde = 140
+
+if høyde >= 150:
+    print("Du kan ta berg-og-dal-banen")
+else:
+    print("Du må vente litt")
+
+
+"""
+"""
+
+vekt = float(input("Hvor mye veier bagasjen din i kg? "))
+
+if vekt > 20:
+    print("Du må betale ekstra")
+else:
+    print("Bagasjen er OK")
+
+"""
+"""
+
+fart = 65
+
+if fart >= 80:
+    print("Høy bot")
+elif fart >= 60:
+    print("Lav bot")
+else:
+    print("Lovlig fart")
+
+"""
+"""
+
+tall1 = float(input("Skriv inn første tall: "))
+tall2 = float(input("Skriv inn andre tall: "))
+operasjon = input("Velg +, -, * eller /: ")
+
+if operasjon == "+":
+    print(tall1 + tall2)
+elif operasjon == "-":
+    print(tall1 - tall2)
+elif operasjon == "*":
+    print(tall1 * tall2)
+elif operasjon == "/":
+    print(tall1 / tall2)
+else:
+    print("Ugyldig operasjon")
+
+"""
+
+"""
+handleliste = []
+while True:
+    vare = input("Skriv inn en vare (eller 'q' for å avslutte): ")
+    if vare.lower() == "q":
+        break
+    handleliste.append(vare)
+print("Handleliste:", handleliste)
+
+"""
+"""
+
+sum_tall = 0
+while True:
+    svar = input("Skriv inn et tall (eller 'q' for å avslutte): ")
+    if svar.lower() == "q":
+        break
+    sum_tall += int(svar)
+print("Sum:", sum_tall)
+
+"""
+"""
+
+nummer = [5, -2, 9, 0, 7, -3, 4]
+positive = [x for x in nummer if x > 0]
+print("Positive tall:", positive)
+
+"""
+"""
+
+karakterer = ["A", "B", "B", "C", "A", "A", "D", "B"]
+statistikk = {}
+for karakter in karakterer:
+    statistikk[karakter] = statistikk.get(karakter, 0) + 1
+print("Karakterstatistikk:", statistikk)
+
+"""
+"""
+
+passord = input("Skriv inn et passord: ")
+if len(passord) >= 6:
+    print("Gyldig passord")
+else:
+    print("Passordet er for kort")
+
+"""
+"""
+
+import random
+hemmelig_tall = random.randint(1, 10)
+while True:
+    gjett = int(input("Gjett et tall mellom 1 og 10: "))
+    if gjett == hemmelig_tall:
+        print("Riktig! Du gjettet riktig.")
+        break
+    print("Feil, prøv igjen.")
+
+"""
+"""
+handleliste = []
+while True:
+    vare = input("Skriv inn en vare (eller 'q' for å avslutte): ")
+    if vare.lower() == "q":
+        break
+    handleliste.append(vare)
+print("Handleliste:", handleliste)
+
+"""
+"""
 handleliste = []
 while True:
     vare = input("Skriv inn en vare (eller 'q' for å avslutte): ")
@@ -69,8 +189,9 @@ else:
 """
 for i in range(1, 6):
     print(i)
-
-# Oppgave 19: Logikk-feil
+"""
+"""
+  
 poeng = 85
 if poeng >= 80:
     print("Godt jobbet!")
